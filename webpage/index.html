@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product" onclick="addToCart('Nike', 59.80)">
+        <img src="s1.jpg" alt="Shoe 1">
+        <h3>Nike</h3>
+        <p>$59.80</p>
+      </div>
+      <div class="product" onclick="addToCart('Puma', 79.70)">
+        <img src="s2.webp" alt="Shoe 2">
+        <h3>Puma</h3>
+        <p>$79.70</p>
+      </div>
+      <div class="product" onclick="addToCart('Adidas', 99.60)">
+        <img src="s3.jpg" alt="Shoe 3">
+        <h3>Adidas</h3>
+        <p>$99.60</p>
+      </div>
+      <div class="product" onclick="addToCart('Reebok', 89.50)">
+        <img src="s4.jpg" alt="Shoe 4">
+        <h3>Reebok</h3>
+        <p>$89.50</p>
+      </div>
+      <div class="product" onclick="addToCart('Jordan', 69.70)">
+        <img src="s5.jpg" alt="Shoe 5">
+        <h3>Jordan</h3>
+        <p>$69.70</p>
+      </div>
+      
+    </section>
+  </main>
+
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
