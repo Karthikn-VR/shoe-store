@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: lavender;
+  }
+  
+  nav {
+    background: transparent;
+    padding: 1rem;
+    
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display:flex;
+    padding: 0;
+    justify-content: space-around;
+    
+  }
+  
+  nav ul li {
+    display:;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: rgb(18, 18, 18);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px;
+  }
+  nav :hover{
+    
+    border-radius: 15px;
+    text-decoration: underline;
+
+  }
+  
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  
+  .product {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .product img :hover{
+
+    filter: drop-shadow(0px 0px 12px grey);
+
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 0px 8px grey); 
+  }
+  
+  .cart {
+    position: fixed;
+    bottom: -200px;
+    right: 20px;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 9px rgba(6, 6, 6, 0.5);
+    transition: bottom 0.5s ease;
+    
+  }
+  
+  .cart.show {
+    bottom: 20px;
+  }
+  
+  .bill {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
